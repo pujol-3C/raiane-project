@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandes Obras - Raiane</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lemon&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-escuro: #1e3c72;
+            --azul-claro: #2a5298;
+            --laranja: #f2994a;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: var(--azul-escuro);
+            padding: 2rem 0;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header nav img {
+            width: 120px;
+        }
+        .nav-link {
+            color: white;
+            font-weight: 600;
+            margin-left: 1rem;
+        }
+        .inicio {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/1/16/Construction_site_Barcelona.jpg') right/cover no-repeat;
+            border-radius: 30px;
+            padding: 4rem;
+            margin: 2rem auto;
+            max-width: 1100px;
+            color: white;
+            position: relative;
+        }
+        .inicio h1 {
+            font-family: 'Lemon', cursive;
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .inicio p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+        .inicio .btn-inicio {
+            margin-top: 2rem;
+            background-color: var(--laranja);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            color: white;
+        }
+        #sobre {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        #sobre h2 {
+            color: var(--azul-escuro);
+            font-family: 'Lemon', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        #sobre p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        #galeria {
+            background-color: #eef2f7;
+            padding: 4rem 2rem;
+        }
+        #galeria img {
+            width: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        #galeria img:hover {
+            transform: scale(1.05);
+        }
+        #contato {
+            padding: 4rem 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        #contato h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--azul-escuro);
+        }
+        #contato .form-control {
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+        #contato button {
+            width: 100%;
+            border-radius: 50px;
+            background-color: var(--laranja);
+            border: none;
+            font-weight: bold;
+            color: white;
+            padding: 0.75rem;
+        }
+        footer {
+            background-color: var(--azul-escuro);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        footer i {
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Construction_icon.png" alt="Logo">
+            <ul class="d-flex list-unstyled mb-0">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Início -->
+    <section id="inicio" class="inicio">
+        <div>
+            <h1>Grandes Obras & Gestão de Projetos</h1>
+            <p>Descubra como engenharia civil e administração se unem para criar obras incríveis e eficientes.</p>
+            <a href="#sobre" class="btn-inicio">Quero saber mais</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <h2>Planejamento e Execução</h2>
+        <p>
+            Projetos de engenharia civil exigem planejamento estratégico, coordenação de equipes e administração eficaz para garantir que cada etapa seja concluída dentro do prazo, orçamento e com qualidade. A gestão de recursos humanos, materiais e financeiros é essencial para o sucesso de grandes obras.
+        </p>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria">
+        <h2 class="text-center mb-4">Exemplos de Grandes Obras</h2>
+        <div class="row g-4">
+            <div class="col-md-4"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Burj_Khalifa.jpg" alt="Burj Khalifa"></div>
+            <div class="col-md-4"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Golden_Gate_Bridge_%28cropped%29.jpg" alt="Ponte Golden Gate"></div>
+            <div class="col-md-4"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Three_Gorges_Dam.jpg" alt="Barragem das Três Gargantas"></div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" class="form-control" placeholder="Seu nome">
+            <input type="email" class="form-control" placeholder="Seu e-mail">
+            <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Desenvolvido por Raiane — Engenharia Civil & Administração</p>
+        <div>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #001f3f, #00509e);
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Botão acessibilidade */
+.menu-acessibilidade {
+    position: relative;
+}
+.opcoes-acessibilidade {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.opcoes-acessibilidade button {
+    margin: 3px;
+}
+.apresenta-lista.mostrar {
+    display: block;
+}
+
+/* Seção inicial */
+.inicio-fundo {
+    background: linear-gradient(135deg, #003366, #0077b6);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+.botao-inicio {
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+/* Seção sobre IA */
+.secao-tropicalia {
+    background-color: #e9ecef;
+    border-radius: 20px;
+    padding: 30px;
+}
+.secao-tropicalia h2 {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Galeria */
+.fundo-galeria {
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+.fundo-galeria img {
+    transition: transform 0.3s;
+}
+.fundo-galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulário */
+.formulario {
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Rodapé */
+footer {
+    background: #001f3f;
+    color: white;
+}
+footer i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
