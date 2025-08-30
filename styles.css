@@ -1,91 +1,118 @@
+:root {
+    --verde-claro: #2ecc71;
+    --verde-escuro: #27ae60;
+    --cinza: #f4f4f9;
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cinza);
 }
-
-/* Cabeçalho */
 header {
-    background: linear-gradient(90deg, #001f3f, #00509e);
-    color: white;
+    background-color: var(--verde-escuro);
+    padding: 2rem 0;
 }
-
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+header nav img {
+    width: 120px;
+}
 .nav-link {
-    color: white !important;
+    color: white;
     font-weight: 600;
+    margin-left: 1rem;
 }
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-/* Botão acessibilidade */
-.menu-acessibilidade {
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/2/2e/Science_Laboratory.jpg') right/cover no-repeat;
+    border-radius: 30px;
+    padding: 4rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+    color: white;
     position: relative;
 }
-.opcoes-acessibilidade {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background: #fff;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+.inicio h1 {
+    font-family: 'Lemon', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
-.opcoes-acessibilidade button {
-    margin: 3px;
+.inicio p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
-.apresenta-lista.mostrar {
-    display: block;
-}
-
-/* Seção inicial */
-.inicio-fundo {
-    background: linear-gradient(135deg, #003366, #0077b6);
-    border-radius: 20px;
-    padding: 30px;
+.inicio .btn-inicio {
+    margin-top: 2rem;
+    background-color: var(--verde-claro);
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
     color: white;
 }
-.botao-inicio {
-    margin-top: 20px;
-    border-radius: 30px;
+#sobre {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
 }
-
-/* Seção sobre IA */
-.secao-tropicalia {
-    background-color: #e9ecef;
-    border-radius: 20px;
-    padding: 30px;
+#sobre h2 {
+    color: var(--verde-escuro);
+    font-family: 'Lemon', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
-.secao-tropicalia h2 {
-    font-weight: bold;
-    color: #003366;
+#sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
-
-/* Galeria */
-.fundo-galeria {
-    background: #f1f1f1;
-    border-radius: 20px;
+#galeria {
+    background-color: #e8f5e9;
+    padding: 4rem 2rem;
 }
-.fundo-galeria img {
+#galeria img {
+    width: 100%;
+    border-radius: 15px;
     transition: transform 0.3s;
 }
-.fundo-galeria img:hover {
+#galeria img:hover {
     transform: scale(1.05);
 }
-
-/* Formulário */
-.formulario {
-    background: #fff;
-    padding: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+#contato {
+    padding: 4rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
-
-/* Rodapé */
-footer {
-    background: #001f3f;
+#contato h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--verde-escuro);
+}
+#contato .form-control {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+#contato button {
+    width: 100%;
+    border-radius: 50px;
+    background-color: var(--verde-claro);
+    border: none;
+    font-weight: bold;
     color: white;
+    padding: 0.75rem;
+}
+footer {
+    background-color: var(--verde-escuro);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
 }
 footer i {
+    margin: 0 0.5rem;
     font-size: 1.5rem;
-    margin: 0 10px;
 }
